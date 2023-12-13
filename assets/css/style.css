@@ -1,0 +1,432 @@
+/*----------------------------------------
+Global CSS
+----------------------------------------*/
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: #333;
+	background: #f9f9f9;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Lato, sans-serif;
+}
+
+
+/*----------------------------------------
+Common CSS
+----------------------------------------*/
+
+.bg-site-color {
+	background-color: #004a80;
+}
+
+.card-color {
+	background-color: #f2f2f2;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.16), 0 5px 20px rgba(0,0,0,0.23);
+}
+
+
+
+
+/*----------------------------------------
+.override-bootstrap
+----------------------------------------*/
+
+.site-nav .navbar-light .navbar-nav .nav-link {
+	color: white;
+	text-transform: uppercase;
+	font-style: normal;
+	margin-right: 30px;
+}
+
+.site-nav .navbar-light .navbar-nav .nav-link:hover {
+	text-shadow: 2px 2px 2px #fff;
+}
+
+.bd-example .carousel-item img {
+	height: 550px;
+}
+
+
+
+/*----------------------------------------
+.top-bar
+----------------------------------------*/
+.top-bar {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 50px;
+	line-height: 50px;
+	background: #00bff3;
+	text-align: center;
+	/*background-image: url("img/uitlogo1.png");*/
+	/*width: 100px;*/
+	/*float: right;*/
+	/*margin-left: 600px;*/
+
+}
+
+.top-bar img{
+	width: 50px;
+	height: 40px;
+
+
+}
+
+/*----------------------------------------
+.banner
+----------------------------------------*/
+.banner {
+	height: 550px;
+	background-color: lightgray;
+	/*background: url('../img/slide2.jpg') 50% 50% no-repeat;*/
+	
+	position: relative;
+}
+.banner h1 {
+	text-align: center;
+	margin: 0;
+	color: #004a80;
+	font-size: 100px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.banner h1:first-child {
+	margin-bottom: 70px;
+	font-weight: 700;
+}
+.banner-body {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+/*----------------------------------------
+.menu-section
+----------------------------------------*/
+.menu-section {
+	background: #004a80;
+	text-align: center;
+}
+.menu {
+	margin: 0;
+	padding: 0;
+}
+.menu li {
+	display: inline-block;
+}
+.menu li a {
+	text-decoration: none;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	/*font-size: 700px;*/
+	padding: 0 40px;
+}
+
+.menu li a:hover {
+	text-shadow: 2px 2px 2px #fff;
+}
+
+
+/*----------------------------------------
+.side navigation
+----------------------------------------*/
+
+/* The side navigation menu */
+.sidenav {
+  /*margin-top: 0;*/
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #0076a3; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 65px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 10px 8px 20px;
+  margin-left: 0px;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+
+   
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  text-decoration: none;
+  color: #004a80;
+}
+
+.sidenav .text a:hover{
+  overflow: hidden;
+  border-right: .15em solid #004a80;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  
+}
+
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation 
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}*/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*----------------------------------------
+.ratingStar
+----------------------------------------*/
+.star {
+		    font-size: 40px;
+		    width: 50px;
+		    display: inline-block;
+		    color: gray;
+		}
+		.star:last-child {
+		    margin-right: 0;
+		}
+		.star:before {
+		    content:'\2605';
+		}
+		.star.on {
+		    color: #004a80;
+		}
+		.star.half:after {
+		    content:'\2605';
+		    color: #004a80;
+		    position: absolute;
+		    margin-left: -34px;
+		    width: 17px;
+		    overflow: hidden;
+		}
+
+
+/*----------------------------------------
+.button
+----------------------------------------*/
+.button:hover{
+			color:white;
+			background: #004a80;
+		}
+
+
+.button {
+			background-color: #fff;
+			border: 2px solid #004a80;
+			color: #004a80;
+			padding: 10px 20px;
+			text-align: center;
+			/* text-decoration: none; */
+			/* display: inline-block; */
+			font-size: 16px;
+			/* margin: 4px 2px; */
+			cursor: pointer;
+			text-align: center;
+			outline: none;
+			border-radius: 20px;
+
+			
+		}
+
+
+
+/*----------------------------------------
+.table_display
+----------------------------------------*/
+
+#table1, #table2 {
+				display: none;
+		}
+
+#rating{
+	display: none;
+}
+
+/*----------------------------------------
+.table_image
+----------------------------------------*/
+	table img{
+			width: 20px;
+			height: 20px;
+		}
+
+/*----------------------------------------
+.form-design
+----------------------------------------*/
+input[type=text],input[type=password]{
+			width: 200px;
+			height: 30px;
+		}
+
+		select{
+			width: 200px;
+			height: 30px;
+		}
+
+	
+
+/*----------------------------------------
+.footer
+----------------------------------------*/
+footer {
+	text-align: center; 
+	background: #004a80;
+	color: #fff;
+	font-size: 18px; 
+	height: 100px;
+	line-height: 100px;
+	margin-top: 50px;
+} 
+
+
+/*----------------------------------------
+.profile_pic
+----------------------------------------*/
+./*image1 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #004a80;
+}
+
+.image1:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+*/
+/*----------------------------------------
+Media queries
+----------------------------------------*/
+@media (min-width: 400px) {
+	body{
+		font-size: 12px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	.modify{
+		width: 100px;
+		height: 100px;
+	}
+}
+@media (min-width: 576px) {
+	body{
+		font-size: 12px;
+	}
+	h3{
+		font-size: 22px;
+	}
+	.modify{
+		width: 110px;
+		height: 110px;
+	}
+}
+
+@media (min-width: 768px) {
+	body{
+		font-size: 14px;
+	}
+	h3{
+		font-size: 24px;
+	}
+	.modify{
+		width: 120px;
+		height: 120px;
+	}
+}
+
+@media (min-width: 992px) {
+	body{
+		font-size: 16px;
+	}
+	h3{
+		font-size: 26px;
+	}
+	.modify{
+		width: 130px;
+		height: 130px;
+	}
+}
+
+@media (min-width: 1200px) {
+	body{
+		font-size: 18px;
+	}
+	h3{
+		font-size: 28px;
+	}
+	.modify{
+		width: 140px;
+		height: 140px;
+	}
+
+}
